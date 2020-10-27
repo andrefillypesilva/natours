@@ -1,15 +1,15 @@
 .row {
     max-width: $grid-width;
     background-color: #eee;
-    margin: 0 auto;
+    margin: 0 auto; // centering block
     
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
 
-    @include clearfix;
+    @include clearfix; // fix height of float blocks
 
-    [class^="col-"] {
+    [class^="col-"] { // set this style to all classes started with "col-"
         background-color: orangered;
         float: left;
 

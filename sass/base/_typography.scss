@@ -41,11 +41,10 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block; // limit the width only to element, but keeping the margin-padding properties
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text; // limit the background specifications only to text area
-    color: transparent; // makes text transparent to make background gradient specifications visible
     letter-spacing: .2rem;
     transition: all .2s;
+
+    @include gradient-font;
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

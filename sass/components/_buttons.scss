@@ -8,6 +8,11 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
     &--animated {
         animation-name: moveInTop;
         animation-duration: .5s;

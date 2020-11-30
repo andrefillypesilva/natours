@@ -27,4 +27,9 @@ html {
 
 body {
     box-sizing: border-box; /* It is defyning how other properties will be applied in this box */
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }

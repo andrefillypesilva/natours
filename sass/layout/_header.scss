@@ -4,10 +4,18 @@
         linear-gradient(to right bottom, /* It is defyning the gradient type and direction */
         rgba($color-primary-light, 0.8), /* It is defyning start color */
         rgba($color-primary-dark, 0.8)), /* It is defyning end color */
-        url(../img/hero.jpg); /* It is defyning bg image */
+        url(../img/hero-small.jpg); /* It is defyning bg image */
     background-size: cover; /* It is defyning that image will fill all the bg space */
     background-position: top;
     position: relative;
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 75em) {
+        background-image: 
+            linear-gradient(to right bottom,
+            rgba($color-secondary-light, 0.8),
+            rgba($color-secondary-dark, 0.8)),
+            url(../img/hero.jpg);
+    }
 
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* It is drawing the visible polygon area */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* It is drawing the visible polygon area */

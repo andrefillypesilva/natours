@@ -181,7 +181,7 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port) {
+  @include respond(tab-port, donthover) {
     height: auto;
     border-radius: 3px;
     background-color: $color-white;

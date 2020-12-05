@@ -13,6 +13,7 @@
     border-radius: 3px;
     overflow: hidden;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
     &--front {
